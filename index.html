@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Deeksha E - Portfolio</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+        nav {
+            background: #111827;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav .container {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: rgba(255,255,255,0.15);
+        }
+        section {
+            padding: 4rem 0;
+        }
+        h2 {
+            color: #1e3a8a;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            font-size: 2.3rem;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            width: 70px;
+            height: 4px;
+            background: #3b82f6;
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        .about-content {
+            max-width: 780px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        .education-grid, .skills-grid, .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.8rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+        .card h3 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+        .card ul {
+            list-style: none;
+        }
+        .card ul li {
+            padding: 0.6rem 0;
+            position: relative;
+            padding-left: 1.8rem;
+        }
+        .card ul li::before {
+            content: "•";
+            color: #3b82f6;
+            position: absolute;
+            left: 0;
+            font-size: 1.4rem;
+        }
+        .contact-info {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .contact-info p {
+            margin: 1rem 0;
+        }
+        .contact-info a {
+            color: #1e40af;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.3rem; }
+            header p { font-size: 1.1rem; }
+            nav .container { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>DEEKSHA E</h1>
+        <p>Computer Science & Business Systems • B.Tech</p>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<main class="container">
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <p>
+            I am a Computer Science and Business Systems (CSBS) student with a strong interest in 
+            combining technology and business problem-solving. My academic background enables me 
+            to design practical, data-driven solutions.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="education-grid">
+        <div class="card">
+            <h3>Ananda Vidhyalaya Matric Higher Secondary School</h3>
+            <p>SSLC - 88.6% (2022)</p>
+            <p>HSLC - 87.6% (2024)</p>
+        </div>
+        <div class="card">
+            <h3>Bannari Amman Institute of Technology</h3>
+            <p>B.Tech CSBS</p>
+            <p>CGPA: 7.67</p>
+            <p>2024 – Present</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="card">
+            <h3>Programming</h3>
+            <ul>
+                <li>C</li>
+                <li>Python</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Web Technologies</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>AI Tools</h3>
+            <ul>
+                <li>Gemini</li>
+                <li>Perplexity</li>
+                <li>Grok</li>
+                <li>ChatGPT</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ✅ Certifications Section -->
+<section id="certifications">
+    <h2>Certifications & Internship</h2>
+    <div class="cert-grid">
+        <div class="card">
+            <h3>Oracle Cloud Infrastructure</h3>
+            <p>Certified in Oracle Cloud Infrastructure fundamentals, covering cloud concepts, compute, storage, and networking services.</p>
+        </div>
+        <div class="card">
+            <h3>Technohacks Internship</h3>
+            <p>Completed internship focused on hands-on development, problem-solving, and real-world project exposure.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:deekshae.cb24@bitsathy.ac.in">deekshae.cb24@bitsathy.ac.in</a></p>
+        <p><strong>Phone:</strong> +91 9677332324</p>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2025 Deeksha E • Portfolio</p>
+</footer>
+
+</body>
+</html>
